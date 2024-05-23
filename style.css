@@ -90,7 +90,7 @@ header {
     align-items: center;
     height: 4rem;
     background-color: var(--background-light);
-    z-index: 2;
+    z-index: 3;
 }
 
 .menu {
@@ -140,6 +140,7 @@ header {
     width: 30rem;
     height: auto;
     opacity: 1;
+    z-index: 4;
 }
 
 .auth {
@@ -303,7 +304,7 @@ interview
     height: auto;
     /* slide's height/2- svg's height/2 */
     top: 14vw;
-    z-index: 1;
+    z-index: 2;
 }
 
 .slider svg:nth-child(1) {
@@ -320,6 +321,7 @@ interview
     display: flex;
     justify-content: flex-start;
     gap: 1vw;
+    z-index: 1;
 }
 
 .slider-list li {
