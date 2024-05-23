@@ -69,7 +69,7 @@ footer {
     align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 620px;
+    height: 60vw;
 }
 
 /*
@@ -90,6 +90,7 @@ header {
     align-items: center;
     height: 4rem;
     background-color: var(--background-light);
+    z-index: 1;
 }
 
 .menu {
@@ -160,7 +161,7 @@ header {
     background-image: url(./assets/header-img-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 740px;
+    height: 48vw;
 }
 
 .header-content, .slogan {
@@ -290,16 +291,17 @@ interview
 
 .slider {
     position: relative;
-    height: 400px;
+    height: 40vw;
     width: 100%;
     background-color: brown;
 }
 
 .slider svg {
     position: absolute;
-    width: 30px;
+    width: 2vw;
     height: auto;
-    top: 175.5px;
+    /* slide's height/2- svg's height/2 */
+    top: 18.37vw;
 }
 
 .slider svg:nth-child(1) {
@@ -308,6 +310,24 @@ interview
 
 .slider svg:nth-child(2) {
     right: 10%;
+}
+
+.slider-list {
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.slider-list li {
+    width: 60%;
+    flex-shrink: 0;
+}
+
+.slider-list li img {
+    width: 100%;
+    height: auto;
 }
 
 .purchase {
@@ -423,8 +443,6 @@ footer .brand svg {
     width: 10rem;
     height: auto;
 }
-
-
 
 .social-medias svg {
     width: 2rem;
