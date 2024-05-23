@@ -90,7 +90,7 @@ header {
     align-items: center;
     height: 4rem;
     background-color: var(--background-light);
-    z-index: 1;
+    z-index: 2;
 }
 
 .menu {
@@ -291,9 +291,10 @@ interview
 
 .slider {
     position: relative;
-    height: 40vw;
+    display: flex;
+    align-items: center;
+    height: 35vw;
     width: 100%;
-    background-color: brown;
 }
 
 .slider svg {
@@ -301,7 +302,8 @@ interview
     width: 2vw;
     height: auto;
     /* slide's height/2- svg's height/2 */
-    top: 18.37vw;
+    top: 14vw;
+    z-index: 1;
 }
 
 .slider svg:nth-child(1) {
@@ -321,8 +323,10 @@ interview
 }
 
 .slider-list li {
-    width: 60%;
+    position: relative;
+    width: 60vw;
     flex-shrink: 0;
+    right: 41vw;
 }
 
 .slider-list li img {
@@ -331,7 +335,7 @@ interview
 }
 
 .purchase {
-    margin-top: 10rem;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
