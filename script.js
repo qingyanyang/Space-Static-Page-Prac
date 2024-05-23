@@ -39,6 +39,20 @@ window.addEventListener('scroll', () => {
     }
 })
 
+// get dom of menu bar
+// click add class active or remove it
+const menuBar = document.getElementById('menu-bar');
+const crossBtn = document.getElementById('menu-cross');
+const menuContent = document.querySelector('.menu-content');
+menuBar.addEventListener('click', () => {
+    menuContent.style.transform = 'translateX(0)';
+});
+crossBtn.addEventListener('click', () => {
+    menuContent.style.transform = 'translateX(-50vw)';
+});
+
+
+
 // get dom of arrow-left
 const arrowLeft = document.getElementById('arrow-left');
 // get dom of arrow-right

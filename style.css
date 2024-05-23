@@ -14,6 +14,7 @@
     --text-dart: rgb(0, 0, 0);
     --text-light: rgb(255, 255, 255);
     --text-grey: rgb(164, 163, 163);
+    --line-grey: rgb(212, 212, 212);
     /* Padding variables */
     --padding-small: 8px;
     --padding-medium: 16px;
@@ -50,11 +51,11 @@ h1, h2, h3 {
 }
 
 section {
-    padding: 2rem 0 7rem 0;
+    padding: 2vw 0 7vw 0;
 }
 
 footer {
-    padding-bottom: 3rem;
+    padding-bottom: 3vw;
 }
 
 .line {
@@ -93,6 +94,48 @@ header {
     z-index: 3;
 }
 
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    position: fixed;
+    padding: 0 8vw 2vh 8vw;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 100vh;
+    background-color: var(--background-light);
+    z-index: 9999;
+    transition: transform .5s ease-in-out;
+    transform: translateX(-50vw);
+    box-shadow: .1vw 0 2vw .1vw var(--text-grey);
+}
+
+.menu-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.menu-content .line {
+    background-color: var(--line-grey);
+}
+
+
+.menu-content>p {
+    font-weight: 600;
+}
+
+#menu-cross {
+    width: 28px;
+}
+
+.menu-content img {
+    width: 10vw;
+    box-shadow: 1vw 1vw 1vw .4vw var(--line-grey);
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -112,13 +155,13 @@ header {
 .menu :nth-child(3) button {
     display: flex;
     align-items: end;
-    gap: 0.1rem;
+    gap: 0.1vw;
 }
 
 .menu :nth-child(3) button svg {
     width: 0.5rem;
     height: auto;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.2vw;
 }
 
 #logo-s svg {
@@ -147,12 +190,12 @@ header {
     display: flex;
     align-items: center;
     font-size: 1rem;
-    gap: 1rem;
+    gap: 1vw;
 }
 
 .auth :nth-child(3) {
     border: 1px solid;
-    padding: 0.4rem 1.4rem;
+    padding: 0.4vw 1.4vw;
 }
 
 .header-content {
@@ -172,7 +215,7 @@ header {
 .slogan-info {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.5vw;
     color: var(--text-light);
 }
 
@@ -189,12 +232,12 @@ selected report
 news
 */
 #selected-report {
-    margin-top: 4rem;
+    margin-top: 4vw;
 }
 
 .title {
     display: flex;
-    margin-bottom: 6rem;
+    margin-bottom: 6vw;
     justify-content: space-between;
     align-items: center;
 }
@@ -205,7 +248,7 @@ news
 
 .read-more {
     display: flex;
-    gap: 10rem;
+    gap: 10vw;
 }
 
 .reports, .news-list {
@@ -223,10 +266,10 @@ news
 }
 
 .report .report-date, .news .news-date {
-    margin-top: 1rem;
+    margin-top: 1vw;
     display: flex;
     align-items: center;
-    gap: .2rem;
+    gap: .2vw;
     font-size: .8rem;
 }
 
@@ -237,7 +280,7 @@ news
 .report .report-info, .news .news-info {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1vw;
 }
 
 .report .report-info p:last-child, .news .news-info p:last-child {
@@ -269,7 +312,7 @@ interview
 }
 
 .interview-content .desc-container {
-    padding: 1.2rem 0 1.4rem 0;
+    padding: 1.2vw 0 1.4vw 0;
     width: 33%;
 }
 
@@ -300,7 +343,7 @@ interview
 
 .slider svg {
     position: absolute;
-    width: 2vw;
+    width: 2rem;
     height: auto;
     /* slide's height/2- svg's height/2 */
     top: 14vw;
@@ -337,12 +380,12 @@ interview
 }
 
 .purchase {
-    margin-top: 6rem;
+    margin-top: 6vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 2vw;
 }
 
 .purchase h3 {
@@ -352,7 +395,7 @@ interview
 
 .purchase a {
     border: 1px solid;
-    padding: 1rem 4rem;
+    padding: 1vw 4vw;
 }
 
 /*slogan 2*/
@@ -372,7 +415,7 @@ interview
 }
 
 .project-list .project img {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.2vw;
     width: 100%;
     height: 39vw;
 }
@@ -383,10 +426,10 @@ interview
 
 /*subscription*/
 #subscribe .input-area {
-    margin-bottom: .5rem;
+    margin-bottom: .5vw;
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 2vw;
 }
 
 #subscribe input {
@@ -398,7 +441,7 @@ interview
 
 #subscribe a {
     border: 1px solid;
-    padding: 1rem 4rem;
+    padding: 1vw 4vw;
 }
 
 #subscribe .line {
@@ -406,8 +449,8 @@ interview
 }
 
 #subscribe>.line {
-    margin-top: 8rem;
-    margin-bottom: -4rem;
+    margin-top: 8vw;
+    margin-bottom: -4vw;
     height: 4px;
 }
 
@@ -423,26 +466,26 @@ footer .brand-content {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    gap: 5rem;
+    gap: 5vw;
 }
 
 footer .social-medias {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    gap: .2rem;
+    gap: .2vw;
 }
 
 footer .brand-intro {
     display: flex;
-    gap: 1rem;
+    gap: 1vw;
     justify-content: space-between;
 }
 
 footer .brand {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2vw;
 }
 
 footer .brand svg {
