@@ -515,9 +515,6 @@ footer .brand svg {
 
 /*responsive*/
 @media only screen and (max-width:950px) {
-    header {
-        background-color: rgb(255, 230, 0);
-    }
 
     .title {
         flex-direction: column;
@@ -543,9 +540,6 @@ footer .brand svg {
 }
 
 @media only screen and (max-width:750px) {
-    header {
-        background-color: aqua;
-    }
 
     html {
         font-size: 12px;
@@ -611,10 +605,6 @@ footer .brand svg {
 
     h1, h2, h3 {
         font-size: 2rem;
-    }
-
-    header {
-        background-color: rgb(55, 65, 255);
     }
 
     .report, .news {
