@@ -48,7 +48,7 @@ menuBar.addEventListener('click', () => {
     menuContent.style.transform = 'translateX(0)';
 });
 crossBtn.addEventListener('click', () => {
-    menuContent.style.transform = 'translateX(-50vw)';
+    menuContent.style.transform = 'translateX(-100vw)';
 });
 
 
