@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Remove Default Margin and paddings for all HTML elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS variables to use any where in website (if you want to change theme one change here will apply to entire website) */
+:root {
+    --background-dark: rgb(0, 0, 0);
+    --background-light: rgb(255, 255, 255);
+    --text-dart: rgb(0, 0, 0);
+    --text-light: rgb(255, 255, 255);
+    --text-grey: rgb(164, 163, 163);
+    /* Padding variables */
+    --padding-small: 8px;
+    --padding-medium: 16px;
+    --padding-large: 32px;
+    --padding-xlarge: 64px;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-dart);
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 2rem 0 7rem 0;
+}
+
+footer {
+    padding-bottom: 3rem;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--text-dart);
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 620px;
+}
+
+/*
+header area 
+*/
+
+header {
+    width: 100vw;
+    background-color: var(--background-light);
+}
+
+.nav-bar {
+    position: fixed;
+    padding: 0 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: var(--background-light);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu button {
+    border: none;
+    background-color: var(--background-light);
+}
+
+.menu svg {
+    width: 1.2rem;
+    height: 1rem;
+}
+
+.menu :nth-child(3) button {
+    display: flex;
+    align-items: end;
+    gap: 0.1rem;
+}
+
+.menu :nth-child(3) button svg {
+    width: 0.5rem;
+    height: auto;
+    margin-bottom: 0.2rem;
+}
+
+#logo-s svg {
+    position: relative;
+    left: 60%;
+    width: 6rem;
+    opacity: 0;
+}
+
+#logo-l {
+    display: flex;
+    justify-content: center;
+    height: 16rem;
+}
+
+#logo-l svg {
+    position: relative;
+    bottom: -6.8rem;
+    width: 30rem;
+    height: auto;
+    opacity: 1;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.auth :nth-child(3) {
+    border: 1px solid;
+    padding: 0.4rem 1.4rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/header-img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 740px;
+}
+
+.header-content, .slogan {
+    text-align: center;
+}
+
+.slogan-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: var(--text-light);
+}
+
+.slogan-info p {
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.4px;
+}
+
+/*
+selected report
+*/
+/*
+news
+*/
+#selected-report {
+    margin-top: 4rem;
+}
+
+.title {
+    display: flex;
+    margin-bottom: 6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title p {
+    font-size: 1rem;
+}
+
+.read-more {
+    display: flex;
+    gap: 10rem;
+}
+
+.reports, .news-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.report, .news {
+    width: 19vw;
+}
+
+.report img, .news img {
+    width: 100%;
+}
+
+.report .report-date, .news .news-date {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    font-size: .8rem;
+}
+
+.report .report-date :nth-child(2), .news .news-date :nth-child(2) {
+    font-size: .6rem;
+}
+
+.report .report-info, .news .news-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.report .report-info p:last-child, .news .news-info p:last-child {
+    color: var(--text-grey);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/*
+interview
+*/
+.interview-content {
+    display: flex;
+}
+
+.interview-content .space {
+    flex: 2;
+}
+
+.interview-content .interview-info {
+    flex: 5;
+}
+
+.interview-content .interview-info img {
+    width: 100%;
+}
+
+.interview-content .desc-container {
+    padding: 1.2rem 0 1.4rem 0;
+    width: 33%;
+}
+
+.interview-content .desc-container p {
+    color: var(--text-grey);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/*slogan*/
+#slogan-1 .slogan {
+    background-image: url(./assets/slogan/slogan-04.jpg);
+}
+
+
+/*current issue*/
+
+.slider {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-color: brown;
+}
+
+.slider svg {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    top: 175.5px;
+}
+
+.slider svg:nth-child(1) {
+    left: 10%;
+}
+
+.slider svg:nth-child(2) {
+    right: 10%;
+}
+
+.purchase {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.purchase h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.purchase a {
+    border: 1px solid;
+    padding: 1rem 4rem;
+}
+
+/*slogan 2*/
+#slogan-2 .slogan {
+    background-image: url(./assets/slogan/slogan-02.jpg);
+}
+
+/*project*/
+.project-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.project-list .project {
+    width: 39vw;
+}
+
+.project-list .project img {
+    margin-bottom: 1.2rem;
+    width: 100%;
+    height: 39vw;
+}
+
+.project-list .project p:nth-of-type(2) {
+    color: var(--text-grey);
+}
+
+/*subscription*/
+#subscribe .input-area {
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#subscribe input {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+#subscribe a {
+    border: 1px solid;
+    padding: 1rem 4rem;
+}
+
+#subscribe .line {
+    height: 2px;
+}
+
+#subscribe>.line {
+    margin-top: 8rem;
+    margin-bottom: -4rem;
+    height: 4px;
+}
+
+/*footer*/
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer .brand-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 5rem;
+}
+
+footer .social-medias {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: .2rem;
+}
+
+footer .brand-intro {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+footer .brand {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer .brand svg {
+    width: 10rem;
+    height: auto;
+}
+
+
+
+.social-medias svg {
+    width: 2rem;
+}

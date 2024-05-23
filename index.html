@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header id="header">
+            <nav class="nav-bar">
+                <ul class="menu">
+                    <li><button>
+                            <svg width="65" height="32"
+                                viewBox="0 0 65 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H65V6H0V0Z" fill="black" />
+                                <path d="M0 13H65V19H0V13Z" fill="black" />
+                                <path d="M0 26H65V32H0V26Z" fill="black" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li><a href>
+                            <svg width="42" height="42"
+                                viewBox="0 0 42 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M29.111 32.1624C26.0511 34.5663 22.193 36 18 36C8.05888 36 0 27.9411 0 18C0 8.05887 8.05888 0 18 0C27.9411 0 36 8.05887 36 18C36 22.3062 34.4878 26.2593 31.9656 29.3571L41.8088 38.7117L39.0533 41.6112L29.111 32.1624ZM32 18C32 25.732 25.732 32 18 32C10.268 32 4 25.732 4 18C4 10.268 10.268 4 18 4C25.732 4 32 10.268 32 18Z"
+                                    fill="black" />
+                            </svg>
+                        </a></li>
+                    <li><button
+                            aria-label="Choose Language">eng<svg width="11"
+                                height="6" viewBox="0 0 11 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.5 6L0.736861 0.749999L10.2631 0.75L5.5 6Z"
+                                    fill="black" />
+                            </svg>
+                        </button></li>
+                </ul>
+                <div id="logo-s">
+                    <svg width="908" height="254" viewBox="0 0 908 254"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M441 0.984741L320.5 252.985H368L389.5 204.485H499.5L520 252.985L569 251.985L447.5 0.984741H441ZM137.5 62.4848L154.5 22.9848C115.167 4.98478 31 -14.5152 4.49999 53.9848C1.33333 70.1514 1 107.085 25 125.485C38.0259 135.471 51.7116 142.064 64.2153 148.088C80.5091 155.937 94.7958 162.82 103 174.985C119 206.985 77.5 228.485 0 191.485V238.485C11.6667 244.818 43.6 256.585 78 252.985C121 248.485 155.5 232.485 156.5 179.485C157.195 142.641 125.513 126.577 96.0539 111.641C83.1357 105.091 70.6452 98.7582 61.5 90.9848C31.5 65.4848 68.5 26.9847 137.5 62.4848ZM184.5 12.9848V251.985H234.5V166.485C250.167 167.818 285 168.692 302 159.985C302.785 159.583 303.577 159.18 304.373 158.774C324.382 148.593 347.596 136.781 350 93.9848C352.5 49.4848 327 12.9848 271.5 12.9848C254.181 12.9848 238.809 12.8358 225.867 12.7103C205.282 12.5108 190.844 12.3708 184.5 12.9848ZM733.5 63.9848L751 23.4848C735.833 14.9848 695.5 0.0847626 655.5 8.48476C605.5 18.9848 574.5 57.4848 569 113.485C563.5 169.485 584 218.485 612 235.485C640 252.485 672.5 255.985 699 251.985C720.2 248.785 736.5 242.985 742 240.485V197.485C723.333 205.318 679.5 217.885 653.5 205.485C621 189.985 613 140.485 626 90.4848C639 40.4848 688.5 37.4848 733.5 63.9848ZM908 8.48476V49.9848H821V102.485H902V143.485H821V205.985H908V248.485H769.5V8.48476H908ZM408 170L445.5 84L482.5 170H408ZM235 56.4128V127.413H255.5C272.5 127.413 295 120.413 297 99.9128C299 79.4128 297.5 63.9128 274.5 57.9128C269.667 56.9128 255 55.2128 235 56.4128Z"
+                            fill="black" />
+                    </svg>
+                </div>
+                <ul class="auth">
+                    <li><a href="#loginModal"
+                            data-toggle="modal">Login</a></li>
+                    <li><a href>Store</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
+                </ul>
+            </nav>
+            <div id="logo-l">
+                <svg width="1245" height="304" viewBox="0 0 1245 304"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M963.5 57.9847L981 17.4847C965.833 8.98472 925.5 -5.91528 885.5 2.48472C835.5 12.9847 804.5 51.4847 799 107.485C793.5 163.485 814 212.485 842 229.485C870 246.485 902.5 249.985 929 245.985C950.2 242.785 966.5 236.985 972 234.485V191.485C953.333 199.318 909.5 211.885 883.5 199.485C851 183.985 843 134.485 856 84.4847C869 34.4847 918.5 31.4847 963.5 57.9847ZM248 3.98472V242.985H298V157.485C313.667 158.818 348.5 159.692 365.5 150.985C366.284 150.583 367.075 150.18 367.871 149.775L367.872 149.775L367.873 149.775L367.873 149.774C387.882 139.593 411.096 127.781 413.5 84.9847C416 40.4847 390.5 3.98472 335 3.98472C317.681 3.98472 302.309 3.8357 289.367 3.71024C268.782 3.5107 254.344 3.37074 248 3.98472ZM137.5 112.485L154.5 72.9847C115.167 54.9847 31 35.4847 4.49999 103.985C1.33333 120.151 1 157.085 25 175.485C38.0259 185.471 51.7116 192.064 64.2153 198.088C80.5091 205.937 94.7958 212.82 103 224.985C119 256.985 77.5 278.485 0 241.485V288.485C11.6667 294.818 43.6 306.585 78 302.985C121 298.485 155.5 282.485 156.5 229.485C157.195 192.641 125.513 176.577 96.0539 161.641C83.1357 155.091 70.6452 148.758 61.5 140.985C31.5 115.485 68.5 76.9847 137.5 112.485ZM602.5 49.9847L482 301.985H529.5L551 253.485H661L681.5 301.985L730.5 300.985L609 49.9847H602.5ZM1245 59.9847V101.485H1158V153.985H1239V194.985H1158V257.485H1245V299.985H1106.5V59.9847H1245ZM568.5 214.985L606 128.985L643 214.985H568.5ZM298.5 45.4847V116.485H319C336 116.485 358.5 109.485 360.5 88.9847C362.5 68.4847 361 52.9847 338 46.9847C333.167 45.9847 318.5 44.2847 298.5 45.4847Z"
+                        fill="black" />
+                </svg>
+            </div>
+            <div class="header-content">
+                <div class="slogan-info">
+                    <p>REPORT</p>
+                    <h1>A Residence's Proposal for
+                        <br /> Greater Communal Value</h1>
+                    <p>Park Changhyun</p>
+                </div>
+            </div>
+        </header>
+        <section id="selected-report">
+            <div class="container">
+                <div class="title">
+                    <h2>Selected Reports</h2>
+                    <div class="read-more">
+                        <p>No.635-634</p>
+                        <div class="read-more-link">
+                            <a href>View All</a>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="reports">
+                    <li>
+                        <div class="report">
+                            <img src="./assets/selected-reports/report-01.jpg"
+                                alt="report-01">
+                            <div class="report-info">
+                                <div class="report-date">
+                                    <p>Oct 30, 2024</p>
+                                    <p>|</p><p>Report</p>
+                                </div>
+                                <p>A Platform as a Springboard</p>
+                                <p>Modern architecture is the product of
+                                    transplantation. Modern architecture is
+                                    transplanted not only to Korean Modern
+                                    architecture is the product of
+                                    transplantation. Modern architecture is
+                                    transplanted not only to Korean.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="report">
+                            <img src="./assets/selected-reports/report-02.jpg"
+                                alt="report-02">
+                            <div class="report-info">
+                                <div class="report-date">
+                                    <p>Oct 28, 2024</p>
+                                    <p>|</p><p>Report</p>
+                                </div>
+                                <p>Public Toilets for All: THE TOKYO TOILET</p>
+                                <p>THE TOKYO TOILET project aims to improve the
+                                    spatial environments wwithin public toilets
+                                    typically project aims to improve the
+                                    spatial environments wwithin public toilets
+                                    typically.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="report">
+                            <img src="./assets/selected-reports/report-03.jpg"
+                                alt="report-03">
+                            <div class="report-info">
+                                <div class="report-date">
+                                    <p>Oct 20, 2024</p>
+                                    <p>|</p><p>Report</p>
+                                </div>
+                                <p>Eroding Boundaries to Expand Zones:
+                                    erosis</p>
+                                <p>'One of our friends once told us that he had
+                                    a chat with a local taxi driver about Alvar
+                                    Aalto for about 40 friends once told us that
+                                    he had a chat with a local taxi driver about
+                                    Alvar Aalto.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="report">
+                            <img src="./assets/selected-reports/report-04.jpg"
+                                alt="report-04">
+                            <div class="report-info">
+                                <div class="report-date">
+                                    <p>Oct 15, 2024</p>
+                                    <p>|</p><p>Report</p>
+                                </div>
+                                <p>NARRATIVE OF UNBUILT THINGS SGHS</p>
+                                <p>SPACE interviewed SGHS, who attempts to link
+                                    the past and the present with their own
+                                    narratives attempts to link the past and the
+                                    present with their own.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section id="interview">
+            <div class="container">
+                <div class="title">
+                    <h2>Interview</h2>
+                    <div class="read-more">
+                        <p>interview <strong>Ahn Soyeon</strong> artistic
+                            director, Atelier Hermes x <strong>Choi
+                                Eunhwa</strong></p>
+                        <div class="read-more-link">
+                            <a href>Read</a>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="interview-content">
+                    <div class="space"></div>
+                    <div class="interview-info">
+                        <h3>
+                            The Other Side of World Imagined <br>
+                            Through Here: Elsewhere
+                        </h3>
+                        <div class="desc-container">
+                            <p>Atelier Hermes is focusing on ongoing
+                                explorations,
+                                and with this as inspiration it organised the
+                                exhibition with this as inspiration it organised
+                                the exhibition organised the
+                                exhibition with this as inspiration.</p>
+                        </div>
+                        <img src="./assets/interview/interview.jpg"
+                            alt="interview">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section id="news">
+            <div class="container">
+                <div class="title">
+                    <h2>News</h2>
+                    <div class="read-more">
+                        <p>(180)</p>
+                        <div class="read-more-link">
+                            <a href>View All</a>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="news-list">
+                    <li>
+                        <div class="news">
+                            <img src="./assets/news/news-01.jpg"
+                                alt="news-01">
+                            <div class="news-info">
+                                <div class="news-date">
+                                    <p>Oct 30, 2024</p>
+                                    <p>|</p><p>News</p>
+                                </div>
+                                <p>A Platform as a Springboard</p>
+                                <p>Modern architecture is the product of
+                                    transplantation. Modern architecture is
+                                    transplanted not only to Korean Modern
+                                    architecture is the product of
+                                    transplantation. Modern architecture is
+                                    transplanted not only to Korean.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news">
+                            <img src="./assets/news/news-02.jpg"
+                                alt="news-02">
+                            <div class="news-info">
+                                <div class="news-date">
+                                    <p>Oct 30, 2024</p>
+                                    <p>|</p><p>News</p>
+                                </div>
+                                <p>Public Toilets for All: THE TOKYO TOILET</p>
+                                <p>THE TOKYO TOILET project aims to improve the
+                                    spatial environments wwithin public toilets
+                                    typically project aims to improve the
+                                    spatial environments wwithin public toilets
+                                    typically.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news">
+                            <img src="./assets/news/news-03.jpg"
+                                alt="news-03">
+                            <div class="news-info">
+                                <div class="news-date">
+                                    <p>Oct 30, 2024</p>
+                                    <p>|</p><p>News</p>
+                                </div>
+                                <p>Eroding Boundaries to Expand Zones:
+                                    erosis</p>
+                                <p>'One of our friends once told us that he had
+                                    a chat with a local taxi driver about Alvar
+                                    Aalto for about 40 friends once told us that
+                                    he had a chat with a local taxi driver about
+                                    Alvar Aalto.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news">
+                            <img src="./assets/news/news-04.jpg"
+                                alt="news-04">
+                            <div class="news-info">
+                                <div class="news-date">
+                                    <p>Oct 30, 2024</p>
+                                    <p>|</p><p>News</p>
+                                </div>
+                                <p>NARRATIVE OF UNBUILT THINGS SGHS</p>
+                                <p>SPACE interviewed SGHS, who attempts to link
+                                    the past and the present with their own
+                                    narratives attempts to link the past and the
+                                    present with their own.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="slogan-1">
+            <div class="slogan">
+                <div class="slogan-info">
+                    <p>REPORT</p>
+                    <h2>A Residence's Proposal for
+                        <br /> Greater Communal Value</h2>
+                    <p>Park Changhyun</p>
+                </div>
+            </div>
+        </section>
+        <section id="current-issue">
+            <div class="container">
+                <div class="title">
+                    <h2>Current Issue</h2>
+                    <div class="read-more">
+                        <p>No.635</p>
+                        <p>Oct, 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <svg width="178" height="290" viewBox="0 0 178 290" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M167.261 41.947L145.568 4.94457e-05L1.19451e-06 144.285L31.6786 176.245L167.261 41.947Z"
+                        fill="black" />
+                    <path
+                        d="M166.789 247.644L144.852 289.464L0.125519 144.335L31.9894 112.559L166.789 247.644Z"
+                        fill="black" />
+                </svg>
+                <svg width="178" height="290" viewBox="0 0 178 290" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.0304 41.947L31.7229 4.94457e-05L177.291 144.285L145.613 176.245L10.0304 41.947Z"
+                        fill="black" />
+                    <path
+                        d="M10.5028 247.644L32.4389 289.464L177.166 144.335L145.302 112.559L10.5028 247.644Z"
+                        fill="black" />
+                </svg>
+            </div>
+            <div class="container">
+                <div class="purchase">
+                    <h3>A Residential Space that Evokes a <br>
+                        Sense of Community: a round architects
+                    </h3>
+                    <a href id="buy-now">Buy Now</a>
+                </div>
+            </div>
+        </section>
+        <section id="slogan-2">
+            <div class="slogan">
+                <div class="slogan-info">
+                    <p>PROJECT</p>
+                    <h2>Gongneung Youth Center for
+                        <br />Cultural & Information Remodeling</h2>
+                    <p>EUS+ Architects</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <div class="title">
+                    <h2>Projects</h2>
+                    <div class="read-more">
+                        <p>(191)</p>
+                        <div class="read-more-link">
+                            <a href>See More</a>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="project-list">
+                    <li class="project">
+                        <img src="./assets/project/project-01.png"
+                            alt="project-01">
+                        <p>YUKSAMDONG SAI. 01</p>
+                        <p>Project</p>
+                    </li>
+                    <li class="project">
+                        <img src="./assets/project/project-02.png"
+                            alt="project-02">
+                        <p>YUKSAMDONG SAI. 01</p>
+                        <p>Project</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section id="subscribe">
+            <div class="container">
+                <div class="title">
+                    <h2>Sign up to the Space newsletter</h2>
+                </div>
+                <div class="input-area">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your Email">
+                    <a href="#header">Subscribe</a>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="line"></div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="brand-content">
+                    <div class="brand">
+                        <svg width="908" height="254" viewBox="0 0 908 254"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M441 0.984741L320.5 252.985H368L389.5 204.485H499.5L520 252.985L569 251.985L447.5 0.984741H441ZM137.5 62.4848L154.5 22.9848C115.167 4.98478 31 -14.5152 4.49999 53.9848C1.33333 70.1514 1 107.085 25 125.485C38.0259 135.471 51.7116 142.064 64.2153 148.088C80.5091 155.937 94.7958 162.82 103 174.985C119 206.985 77.5 228.485 0 191.485V238.485C11.6667 244.818 43.6 256.585 78 252.985C121 248.485 155.5 232.485 156.5 179.485C157.195 142.641 125.513 126.577 96.0539 111.641C83.1357 105.091 70.6452 98.7582 61.5 90.9848C31.5 65.4848 68.5 26.9847 137.5 62.4848ZM184.5 12.9848V251.985H234.5V166.485C250.167 167.818 285 168.692 302 159.985C302.785 159.583 303.577 159.18 304.373 158.774C324.382 148.593 347.596 136.781 350 93.9848C352.5 49.4848 327 12.9848 271.5 12.9848C254.181 12.9848 238.809 12.8358 225.867 12.7103C205.282 12.5108 190.844 12.3708 184.5 12.9848ZM733.5 63.9848L751 23.4848C735.833 14.9848 695.5 0.0847626 655.5 8.48476C605.5 18.9848 574.5 57.4848 569 113.485C563.5 169.485 584 218.485 612 235.485C640 252.485 672.5 255.985 699 251.985C720.2 248.785 736.5 242.985 742 240.485V197.485C723.333 205.318 679.5 217.885 653.5 205.485C621 189.985 613 140.485 626 90.4848C639 40.4848 688.5 37.4848 733.5 63.9848ZM908 8.48476V49.9848H821V102.485H902V143.485H821V205.985H908V248.485H769.5V8.48476H908ZM408 170L445.5 84L482.5 170H408ZM235 56.4128V127.413H255.5C272.5 127.413 295 120.413 297 99.9128C299 79.4128 297.5 63.9128 274.5 57.9128C269.667 56.9128 255 55.2128 235 56.4128Z"
+                                fill="black" />
+                        </svg>
+                        <p>&copy; 2024 VMSPACE. All rights reserved</p>
+                    </div>
+                    <ul class="brand-intro">
+                        <li><a href>About Us</a></li>
+                        <li><a href>Privacy</a></li>
+                        <li><a href>Policy Cookie</a></li>
+                        <li><a href>Policy Copyright</a></li>
+                    </ul>
+                </div>
+                <ul class="social-medias">
+                    <li><svg height="100%"
+                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                            version="1.1" viewBox="0 0 512 512" width="100%"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:serif="http://www.serif.com/"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"><path
+                                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" /></svg></li>
+                    <li><svg height="100%"
+                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                            version="1.1" viewBox="0 0 512 512" width="100%"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:serif="http://www.serif.com/"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"><path
+                                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-193.446,81c-47.527,0 -53.487,0.201 -72.152,1.053c-18.627,0.85 -31.348,3.808 -42.48,8.135c-11.508,4.472 -21.267,10.456 -30.996,20.184c-9.729,9.729 -15.713,19.489 -20.185,30.996c-4.326,11.132 -7.284,23.853 -8.135,42.48c-0.851,18.665 -1.052,24.625 -1.052,72.152c0,47.527 0.201,53.487 1.052,72.152c0.851,18.627 3.809,31.348 8.135,42.48c4.472,11.507 10.456,21.267 20.185,30.996c9.729,9.729 19.488,15.713 30.996,20.185c11.132,4.326 23.853,7.284 42.48,8.134c18.665,0.852 24.625,1.053 72.152,1.053c47.527,0 53.487,-0.201 72.152,-1.053c18.627,-0.85 31.348,-3.808 42.48,-8.134c11.507,-4.472 21.267,-10.456 30.996,-20.185c9.729,-9.729 15.713,-19.489 20.185,-30.996c4.326,-11.132 7.284,-23.853 8.134,-42.48c0.852,-18.665 1.053,-24.625 1.053,-72.152c0,-47.527 -0.201,-53.487 -1.053,-72.152c-0.85,-18.627 -3.808,-31.348 -8.134,-42.48c-4.472,-11.507 -10.456,-21.267 -20.185,-30.996c-9.729,-9.728 -19.489,-15.712 -30.996,-20.184c-11.132,-4.327 -23.853,-7.285 -42.48,-8.135c-18.665,-0.852 -24.625,-1.053 -72.152,-1.053Zm0,31.532c46.727,0 52.262,0.178 70.715,1.02c17.062,0.779 26.328,3.63 32.495,6.025c8.169,3.175 13.998,6.968 20.122,13.091c6.124,6.124 9.916,11.954 13.091,20.122c2.396,6.167 5.247,15.433 6.025,32.495c0.842,18.453 1.021,23.988 1.021,70.715c0,46.727 -0.179,52.262 -1.021,70.715c-0.778,17.062 -3.629,26.328 -6.025,32.495c-3.175,8.169 -6.967,13.998 -13.091,20.122c-6.124,6.124 -11.953,9.916 -20.122,13.091c-6.167,2.396 -15.433,5.247 -32.495,6.025c-18.45,0.842 -23.985,1.021 -70.715,1.021c-46.73,0 -52.264,-0.179 -70.715,-1.021c-17.062,-0.778 -26.328,-3.629 -32.495,-6.025c-8.169,-3.175 -13.998,-6.967 -20.122,-13.091c-6.124,-6.124 -9.917,-11.953 -13.091,-20.122c-2.396,-6.167 -5.247,-15.433 -6.026,-32.495c-0.842,-18.453 -1.02,-23.988 -1.02,-70.715c0,-46.727 0.178,-52.262 1.02,-70.715c0.779,-17.062 3.63,-26.328 6.026,-32.495c3.174,-8.168 6.967,-13.998 13.091,-20.122c6.124,-6.123 11.953,-9.916 20.122,-13.091c6.167,-2.395 15.433,-5.246 32.495,-6.025c18.453,-0.842 23.988,-1.02 70.715,-1.02Zm0,53.603c-49.631,0 -89.865,40.234 -89.865,89.865c0,49.631 40.234,89.865 89.865,89.865c49.631,0 89.865,-40.234 89.865,-89.865c0,-49.631 -40.234,-89.865 -89.865,-89.865Zm0,148.198c-32.217,0 -58.333,-26.116 -58.333,-58.333c0,-32.217 26.116,-58.333 58.333,-58.333c32.217,0 58.333,26.116 58.333,58.333c0,32.217 -26.116,58.333 -58.333,58.333Zm114.416,-151.748c0,11.598 -9.403,20.999 -21.001,20.999c-11.597,0 -20.999,-9.401 -20.999,-20.999c0,-11.598 9.402,-21 20.999,-21c11.598,0 21.001,9.402 21.001,21Z" /></svg></li>
+                    <li>
+                        <svg height="100%"
+                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                            version="1.1" viewBox="0 0 512 512" width="100%"
+                            xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:serif="http://www.serif.com/"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"><path
+                                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-20.967,175.63c-4.139,-15.489 -16.337,-27.687 -31.826,-31.826c-28.078,-7.524 -140.653,-7.524 -140.653,-7.524c0,0 -112.575,0 -140.653,7.524c-15.486,4.139 -27.686,16.337 -31.826,31.826c-7.521,28.075 -7.521,86.652 -7.521,86.652c0,0 0,58.576 7.521,86.648c4.14,15.489 16.34,27.69 31.826,31.829c28.078,7.521 140.653,7.521 140.653,7.521c0,0 112.575,0 140.653,-7.521c15.489,-4.139 27.687,-16.34 31.826,-31.829c7.521,-28.072 7.521,-86.648 7.521,-86.648c0,0 0,-58.577 -7.521,-86.652Zm-208.481,140.653l0,-108.002l93.53,54.001l-93.53,54.001Z" /></svg>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
