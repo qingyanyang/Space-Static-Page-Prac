@@ -126,6 +126,14 @@ sliderListMobile.addEventListener('touchmove', (e) => {
     }
     switchIndicator();
 }, false);
+
+// automatically play
+document.addEventListener('DOMContentLoaded', () => {
+    setInterval(() => {
+        handleClickLeft(sliderListMobile, numLiMobile, initialRightMobile, moveRightMobile);
+        switchIndicator();
+    }, 4000);
+});
 // alg:
 // pointer = 2;
 // li's numLi = li.length;
