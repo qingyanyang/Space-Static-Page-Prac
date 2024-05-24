@@ -52,7 +52,12 @@ crossBtn.addEventListener('click', () => {
 });
 
 
+// global var
+let pointer = 2;
 
+/**
+ * Big screen:
+ */
 // get dom of arrow-left
 const arrowLeft = document.getElementById('arrow-left');
 // get dom of arrow-right
@@ -61,8 +66,53 @@ const arrowRight = document.getElementById('arrow-right');
 //     right: 41vw;
 // }
 // get dom of slider-list
-const sliderList = document.querySelector('.slider-list');
+const sliderList = document.querySelector('.slider .slider-list');
 
+// initialization vars
+const numLi = sliderList.children.length;
+const initialRight = 41;
+const moveRight = 61;
+
+arrowLeft.addEventListener('click', () => {
+    handleClickLeft(sliderList, numLi, initialRight, moveRight);
+});
+
+arrowRight.addEventListener('click', () => {
+    handleClickRight(sliderList, numLi, initialRight, moveRight);
+});
+
+/**
+ * Small screen:
+ */
+// get dom of slider-list
+const sliderListMobile = document.querySelector('.slider-mobile .slider-list');
+const indicatorList = document.querySelector('.indicators').children;
+
+// initialization vars
+const numLiMobile = sliderListMobile.children.length;
+const initialRightMobile = 0;
+const moveRightMobile = 90;
+// global vars
+let touchStartX = 0;
+let touchEndX = 0;
+
+sliderListMobile.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+}, false);
+
+sliderListMobile.addEventListener('touchmove', (e) => {
+    if (!touchStartX) return;
+    touchEndX = e.touches[0].clientX;
+    const diffX = touchEndX - touchStartX;
+    if (diffX > 0) {
+        // to right 
+        handleClickRight(sliderListMobile, numLiMobile, initialRightMobile, moveRightMobile);
+    } else {
+        // to left
+        handleClickLeft(sliderListMobile, numLiMobile, initialRightMobile, moveRightMobile);
+    }
+    switchIndicator();
+}, false);
 // alg:
 // pointer = 2;
 // li's numLi = li.length;
@@ -74,12 +124,8 @@ const sliderList = document.querySelector('.slider-list');
 // if pointer === 2;
 // click arrowLeft ->sliderList.li.style.right = 61*numLi;
 
-let pointer = 2;
-const numLi = sliderList.children.length;
-const initialRight = 41;
-const moveRight = 61;
-
-arrowLeft.addEventListener('click', () => {
+// commonly used functions for left move and right move
+const handleClickLeft = (sliderList, numLi, initialRight, moveRight) => {
     if (pointer === numLi - 1) {
         Array.from(sliderList.children).forEach(li => {
             li.style.right = initialRight + 'vw';
@@ -91,8 +137,9 @@ arrowLeft.addEventListener('click', () => {
         });
         pointer++;
     }
-});
-arrowRight.addEventListener('click', () => {
+}
+
+const handleClickRight = (sliderList, numLi, initialRight, moveRight) => {
     if (pointer === 2) {
         pointer = numLi - 1;
         Array.from(sliderList.children).forEach(li => {
@@ -104,10 +151,15 @@ arrowRight.addEventListener('click', () => {
             li.style.right = initialRight + moveRight * (pointer - 2) + 'vw';
         });
     }
-});
+}
 
+// indicator switch
+// alg: show solid circle for index of pointer-2
+// empty all; set indexed circle on
 
-
-
-
-
+const switchIndicator = () => {
+    Array.from(indicatorList).forEach(li => {
+        li.firstElementChild.style.backgroundColor = "white";
+    });
+    indicatorList[pointer - 2].firstElementChild.style.backgroundColor = "black";
+}
