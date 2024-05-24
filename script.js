@@ -91,7 +91,7 @@ const indicatorList = document.querySelector('.indicators').children;
 // initialization vars
 const numLiMobile = sliderListMobile.children.length;
 const initialRightMobile = 0;
-const moveRightMobile = 90;
+const moveRightMobile = 80;
 // global vars
 let touchStartX = 0;
 let touchEndX = 0;

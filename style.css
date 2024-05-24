@@ -388,6 +388,10 @@ interview
     height: auto;
 }
 
+.slider-mobile {
+    display: none;
+}
+
 .slider-mobile .slider-list {
     display: flex;
     white-space: nowrap;
@@ -398,7 +402,7 @@ interview
 
 .slider-mobile .slider-list li {
     position: relative;
-    width: 90vw;
+    width: 80vw;
     height: 45vw;
     flex-shrink: 0;
     right: 0vw;
@@ -639,6 +643,14 @@ footer .brand svg {
     .menu-content {
         width: 70vw;
         transform: translateX(-70vw);
+    }
+
+    .slider-mobile {
+        display: block;
+    }
+
+    .slider {
+        display: none;
     }
 }
 
