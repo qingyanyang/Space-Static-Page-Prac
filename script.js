@@ -1,8 +1,11 @@
+/********************************************************************
+ * Logo effect
+ * 
+ *********************************************************************/
 // get dom of logo-l
 const logoLarge = document.getElementById('logo-l');
 // get dom of logo-s
 const logoSmall = document.getElementById('logo-s');
-
 
 // get scroll position
 window.addEventListener('scroll', () => {
@@ -39,6 +42,11 @@ window.addEventListener('scroll', () => {
     }
 })
 
+/********************************************************************
+ * Menu bar effect
+ * 
+ *********************************************************************/
+
 // get dom of menu bar
 // click add class active or remove it
 const menuBar = document.getElementById('menu-bar');
@@ -51,6 +59,11 @@ crossBtn.addEventListener('click', () => {
     menuContent.style.transform = 'translateX(-100vw)';
 });
 
+
+/********************************************************************
+ * Slider effect
+ * 
+ *********************************************************************/
 
 // global var
 let pointer = 2;
